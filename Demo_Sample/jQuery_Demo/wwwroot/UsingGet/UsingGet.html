@@ -1,0 +1,29 @@
+﻿<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#MyButton').click(function() {
+                $.get('../HelpDetails.html', function(data) {
+                    $('#OutputDiv').html(data);
+                });
+
+                $.get('../../home/GetCustomerById', {
+                    id: 5
+                }, function(data) {
+                    console.log(data);
+                    console.log('Id: ' + data.id + ' ' +
+                        data.firstName + ' ' + data.lastName);
+                }, 'json');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="MyButton">Click to Get Help HTML</button>
+    <div id="OutputDiv"></div>
+</body>
+
+</html>

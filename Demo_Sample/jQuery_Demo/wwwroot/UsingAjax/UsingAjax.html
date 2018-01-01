@@ -1,0 +1,32 @@
+﻿<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#MyButton').click(function() {
+                $.ajax({
+                    url: '../../home/GetCustomers',
+                    dataType: 'json',
+                    success: function(data, status, xhr) {
+                        $.each(data, function(i, v) {
+                            $('#OutputDiv').append(v.firstName + ' | ' + v.lastName);
+                            $('#OutputDiv').append('<br/>');
+                        });
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Error occurred: ' + status);
+                    }
+
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="MyButton">Submit</button>
+    <div id="OutputDiv"></div>
+</body>
+
+</html>

@@ -1,0 +1,296 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .BlueDiv {
+            background-color: Navy;
+            color: White;
+            width: 200px;
+        }
+        
+        .RedDiv {
+            background-color: Red;
+            color: White;
+            width: 200px;
+        }
+        
+        .style1 {
+            width: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //========by Tag Name
+            // var divs = $('div');
+            // console.log('By Tag Name');
+            // console.log(divs);
+
+            //========by Tag Id
+            // var myContent = $('#myContent');
+            // console.log('By Tag Id');
+            // console.log(myContent);
+
+            //========by Class
+            // var blueDivs = $('.BlueDiv');
+            // console.log('By Class');
+            // console.log(blueDivs);
+
+            //========Combined selectors
+            // var tagCollections = $('div, span, #DataTable, .RedDiv');
+            // console.log('Combined selectors');
+            // console.log(tagCollections);
+
+            //========Index filters   
+            // var firstSelect = $('#DataTable td:first').css('background-color', 'green');
+            // var firstOption = $('td:first').css('background-color', 'green');
+
+            // var last = $('option:last');
+
+            // var odd = $('#selectorsExample td:odd').css('background-color', 'red');
+            // var even = $('td:even').css('background-color', 'blue');
+
+            // var eq_2 = $('#selectorsExample td:eq(2)').css('background-color', 'cyan');
+            // var gt_2 = $('#selectorsExample td:gt(2)').css('background-color', 'grey');
+            // var lt_2 = $('#selectorsExample td:lt(2)').css('background-color', 'yellow');
+
+            //========Conditional filters - Form filters
+            // var inputText = $('input:text');
+            // console.log('Input type text');
+            // console.log(inputText);
+
+            // console.log('Selected option');
+            // var optionSelected = $('option:selected');
+            // console.log(optionSelected);
+
+            //========Relationship filters - Content filters
+            // var nth_child = $('tr:nth-child(2)').css('background-color', 'red');
+            // console.log('nth_child');
+            // console.log(nth_child);
+
+            // var nth_child_odd = $('tr:nth-child(odd)').css('background-color', 'green');
+            // console.log('nth_child_odd');
+            // console.log(nth_child_odd);
+
+            // var nth_child_even = $('tr:nth-child(even)').css('background-color', 'blue');
+            // console.log('nth_child_even');
+            // console.log(nth_child_even);
+
+            //========Attribute filters
+            // var div_title = $('div[title]');
+            // console.log('div title');
+            // console.log(div_title);
+
+            // var input_text = $('input[type="text"]');
+            // console.log('Input type text');
+            // console.log(input_text);
+
+            // var selector_starts_with = $('div[title^="Div"]');
+            // console.log('Starts with Div');
+            // console.log(selector_starts_with);
+
+            // var selector_ends_with = $('td[title$="1"]');
+            // console.log('Ends with 1');
+            // console.log(selector_ends_with);
+
+            // var selector_contains_text = $('td[title*="1"]');
+            // console.log('Contains 1');
+            // console.log(selector_contains_text);
+
+            // var selector_not_equals = $('td[title!="Cell 1 Row 10"]');
+            // console.log('Not equals of Cell 1 Row 10');
+            // console.log(selector_not_equals);
+
+            //========Retrieve, Set and Remove attributes
+            // var retrieveAttribute = $('input').attr('name');
+            // console.log('Retrieve attribute value');
+            // console.log(retrieveAttribute);
+
+            // var addAttribute = $('input').attr('entityFieldId', 'IdFromDB');
+            // console.log('Add attribute');
+            // console.log(addAttribute);
+
+            // var removeAttribute = $('td').removeAttr('title');
+            // console.log('Remove attribute');
+            // console.log(removeAttribute);
+
+            //========Class, HTML, Text, Value - Functions
+            // var new_red_divs = $('div').addClass('RedDiv');
+            // console.log('Add Class');
+            // console.log(new_red_divs);
+
+            // var has_class = $('div').hasClass('BlueDiv');
+            // console.log('Has BlueDiv class divs');
+            // console.log(has_class);
+
+            // var removed_red_divs = $('div').removeClass('RedDiv');
+            // console.log('Removed RedDiv Class from divs');
+            // console.log(removed_red_divs);
+
+            // var toggle_Blue_divs = $('div').toggleClass('BlueDiv');
+            // console.log('Toggle BlueDiv Class to divs');
+            // console.log(toggle_Blue_divs);
+
+            // var html_function = $('#myContent').html();
+            // Console_Log('html() function', html_function);
+
+            // var add_html_content = $('#myContent').html('<h1>Welcome to jQuery Session</h1>');
+            // Console_Log('Add html content', add_html_content);
+
+            // var text_function = $('#myContent').text();
+            // Console_Log('text() function', text_function);
+
+            // var add_text_content = $('#myContent').text('<h1>Welcome to jQuery Session</h1>');
+            // Console_Log('Add text content', add_text_content);
+
+            // var val_function = $('#selectLanguage option:selected').val();
+            // Console_Log('val() function', val_function);
+
+            //========Traversing
+
+            //========Events
+        });
+
+        function Console_Log(title, value) {
+            console.log(title);
+            console.log(value);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="myContent">
+        My jQuery enabled Page
+    </div>
+    <div id="selectorsExample">
+        <table>
+            <tr>
+                <td title="Cell 1 Row 1">Cell 1 Row 1</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 2">Cell 1 Row 2</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 3">Cell 1 Row 3</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 4">Cell 1 Row 4</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 5">Cell 1 Row 5</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 6">Cell 1 Row 6</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 7">Cell 1 Row 7</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 8">Cell 1 Row 8</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 9">Cell 1 Row 9</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 10">Cell 1 Row 10</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 11">Cell 1 Row 11</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 12">Cell 1 Row 12</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 13">Cell 1 Row 13</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 14">Cell 1 Row 14</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 15">Cell 1 Row 15</td>
+            </tr>
+            <tr>
+                <td title="Cell 1 Row 16">Cell 1 Row 16</td>
+            </tr>
+        </table>
+    </div>
+    <div id="TestDiv" title="Div Title asdf asdfsdf asdf">
+        This is my div text
+    </div>
+    <div title="Contains Table">
+        <table id="DataTable">
+            <tr>
+                <td>Cell 1 Row 1</td>
+            </tr>
+            <tr>
+                <td>Cell 1 Row 2</td>
+            </tr>
+            <tr>
+                <td>Cell 1 Row 3</td>
+            </tr>
+            <tr>
+                <td>
+                    <table style="width:100%">
+                        <tr>
+                            <td>Nested Table Cell and Row</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    <div class="BlueDiv">
+        <span>Blue div</span>
+    </div>
+    <br />
+    <span class="BlueDiv">This is my blue span</span>
+    <br />
+    <div class="RedDiv">
+        <span>Red div</span>
+    </div>
+
+    <form id="form1" runat="server">
+        <table style="width:300px;">
+            <tr>
+                <td style="width:30%;">First Name</td>
+                <td style="width:70%;"><input id="FirstNameTextBox" name="firstNameTxtBox" value="John" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input id="LastNameTextBox" type="text" /></td>
+            </tr>
+            <tr>
+                <td>Comments</td>
+                <td><textarea rows="5" cols="60" id="CommentsTextBox">TextArea</textarea></td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="selectLanguage">
+                        <option value="1">C</option>
+                        <option value="2" selected="true">C++</option>
+                        <option value="3">C#</option>
+                        <option value="4">JAVA</option>                        
+                    </select></td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="selectCloudTechnology">
+                            <option value="7">MS Azure</option>
+                            <option value="8">Amazon AWS</option>
+                            <option value="9">Google Cloud</option>
+                    </select>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td><input id="SubmitButton" type="button" value="Submit" /></td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+
+</html>

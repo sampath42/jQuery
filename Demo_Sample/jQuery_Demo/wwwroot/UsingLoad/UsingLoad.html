@@ -1,0 +1,20 @@
+﻿<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#MyButton').click(function() {
+                //Load HTML from HelpDetails.html
+                $('#OutputDiv').load('../HelpDetails.html');
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <button id="MyButton">Click to Get HTML</button>
+    <div id="OutputDiv"></div>
+</body>
+
+</html>

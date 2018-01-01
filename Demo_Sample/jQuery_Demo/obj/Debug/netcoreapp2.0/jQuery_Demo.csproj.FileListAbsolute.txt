@@ -1,0 +1,10 @@
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\bin\Debug\netcoreapp2.0\jQuery_Demo.deps.json
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\bin\Debug\netcoreapp2.0\jQuery_Demo.runtimeconfig.json
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\bin\Debug\netcoreapp2.0\jQuery_Demo.runtimeconfig.dev.json
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\bin\Debug\netcoreapp2.0\jQuery_Demo.dll
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\bin\Debug\netcoreapp2.0\jQuery_Demo.pdb
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\obj\Debug\netcoreapp2.0\jQuery_Demo.csproj.CoreCompileInputs.cache
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\obj\Debug\netcoreapp2.0\jQuery_Demo.AssemblyInfoInputs.cache
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\obj\Debug\netcoreapp2.0\jQuery_Demo.AssemblyInfo.cs
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\obj\Debug\netcoreapp2.0\jQuery_Demo.dll
+F:\Important\From EPAM\My Trainings\jQuery\Demo_Sample\jQuery_Demo\obj\Debug\netcoreapp2.0\jQuery_Demo.pdb
